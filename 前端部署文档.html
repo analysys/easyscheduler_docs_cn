@@ -426,11 +426,8 @@
 <li><h4 id="node&#x5B89;&#x88C5;">node&#x5B89;&#x88C5;</h4>
 <p>Node&#x5305;&#x4E0B;&#x8F7D; (&#x6CE8;&#x610F;&#x7248;&#x672C; 8.9.4) <code>https://nodejs.org/download/release/v8.9.4/</code> </p>
 </li>
-<li><h4 id="&#x62C9;&#x53D6;&#x524D;&#x7AEF;&#x9879;&#x76EE;&#x5230;&#x672C;&#x5730;">&#x62C9;&#x53D6;&#x524D;&#x7AEF;&#x9879;&#x76EE;&#x5230;&#x672C;&#x5730;</h4>
-<p>&#x9879;&#x76EE;git&#x4ED3;&#x5E93;&#x5730;&#x5740; <code>git@git.analysys.cn:analysys_changsha/escheduler.git</code></p>
-</li>
 <li><h4 id="&#x524D;&#x7AEF;&#x9879;&#x76EE;&#x6784;&#x5EFA;">&#x524D;&#x7AEF;&#x9879;&#x76EE;&#x6784;&#x5EFA;</h4>
-<p>&#x7528;&#x547D;&#x4EE4;&#x884C;&#x6A21;&#x5F0F; <code>cd</code>  &#x8FDB;&#x5165; <code>escheduler</code>&#x9879;&#x76EE;&#x76EE;&#x5F55;&#x5E76;&#x6267;&#x884C; <code>npm install</code> &#x62C9;&#x53D6;&#x9879;&#x76EE;&#x4F9D;&#x8D56;&#x5305;</p>
+<p>&#x7528;&#x547D;&#x4EE4;&#x884C;&#x6A21;&#x5F0F; <code>cd</code>  &#x8FDB;&#x5165; <code>escheduler-ui</code>&#x9879;&#x76EE;&#x76EE;&#x5F55;&#x5E76;&#x6267;&#x884C; <code>npm install</code> &#x62C9;&#x53D6;&#x9879;&#x76EE;&#x4F9D;&#x8D56;&#x5305;</p>
 </li>
 </ul>
 <blockquote>
@@ -440,11 +437,11 @@
 <h5 id="&#xFF01;&#xFF01;&#xFF01;&#x8FD9;&#x91CC;&#x7279;&#x522B;&#x6CE8;&#x610F;-&#x9879;&#x76EE;&#x5982;&#x679C;&#x5728;&#x62C9;&#x53D6;&#x4F9D;&#x8D56;&#x5305;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x62A5;--node-sass-error--&#x9519;&#x8BEF;&#xFF0C;&#x8BF7;&#x5728;&#x6267;&#x884C;&#x5B8C;&#x540E;&#x518D;&#x6B21;&#x6267;&#x884C;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;">&#xFF01;&#xFF01;&#xFF01;&#x8FD9;&#x91CC;&#x7279;&#x522B;&#x6CE8;&#x610F; &#x9879;&#x76EE;&#x5982;&#x679C;&#x5728;&#x62C9;&#x53D6;&#x4F9D;&#x8D56;&#x5305;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x62A5; &quot; node-sass error &quot; &#x9519;&#x8BEF;&#xFF0C;&#x8BF7;&#x5728;&#x6267;&#x884C;&#x5B8C;&#x540E;&#x518D;&#x6B21;&#x6267;&#x884C;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;</h5>
 <pre><code>npm install node-sass --unsafe-perm //&#x5355;&#x72EC;&#x5B89;&#x88C5;node-sass&#x4F9D;&#x8D56;
 </code></pre></blockquote>
-<p>&#x9879;&#x76EE;&#x6839;&#x76EE;&#x5F55;&#x521B;&#x5EFA;<code>.env</code>&#x4E3A;&#x540E;&#x7F00;&#x540D;&#x7684;&#x6587;&#x4EF6;&#x5E76;&#x8F93;&#x5165;</p>
-<pre><code># &#x524D;&#x7AEF;&#x4EE3;&#x7406;&#x7684;&#x63A5;&#x53E3;&#x5730;&#x5740;
+<p>&#x5728;&#x9879;&#x76EE;<code>escheduler-ui</code>&#x6839;&#x76EE;&#x5F55;<code>.env</code>&#x6DFB;&#x52A0;&#x4EE3;&#x7406;&#x7684;&#x7AEF;&#x53E3;&#x5730;&#x5740;</p>
+<pre><code># &#x524D;&#x7AEF;&#x4EE3;&#x7406;&#x7684;&#x63A5;&#x53E3;&#x5730;&#x5740;&#xFF08;&#x4F8B;&#xFF09;
 API_BASE = http://192.168.220.204:12345
 
-# &#x5982;&#x679C;&#x60A8;&#x9700;&#x8981;&#x7528;ip&#x8BBF;&#x95EE;&#x9879;&#x76EE;&#x53EF;&#x4EE5;&#x628A; &quot;#&quot; &#x53F7;&#x53BB;&#x6389;
+# &#x5982;&#x679C;&#x60A8;&#x9700;&#x8981;&#x7528;ip&#x8BBF;&#x95EE;&#x9879;&#x76EE;&#x53EF;&#x4EE5;&#x628A; &quot;#&quot; &#x53F7;&#x53BB;&#x6389;&#xFF08;&#x4F8B;&#xFF09;
 #DEV_HOST = 192.168.6.132
 </code></pre><p>&#x8FD0;&#x884C;</p>
 <ul>
@@ -659,7 +656,7 @@ client_max_body_size 1024m
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"环境搭建","level":"1.2.1","depth":2,"next":{"title":"安装及配置","level":"1.2.2","depth":2,"anchor":"#安装及配置","path":"前端部署文档.md","ref":"前端部署文档.md#安装及配置","articles":[]},"previous":{"title":"前端部署文档","level":"1.2","depth":1,"ref":"","articles":[{"title":"环境搭建","level":"1.2.1","depth":2,"anchor":"#前端项目环境构建及编译","path":"前端部署文档.md","ref":"前端部署文档.md#前端项目环境构建及编译","articles":[]},{"title":"安装及配置","level":"1.2.2","depth":2,"anchor":"#安装及配置","path":"前端部署文档.md","ref":"前端部署文档.md#安装及配置","articles":[]},{"title":"项目生产环境Nginx配置","level":"1.2.3","depth":2,"anchor":"#项目生产环境配置","path":"前端部署文档.md","ref":"前端部署文档.md#项目生产环境配置","articles":[]},{"title":"前端项目发布","level":"1.2.4","depth":2,"anchor":"#前端项目发布","path":"前端部署文档.md","ref":"前端部署文档.md#前端项目发布","articles":[]},{"title":"问题","level":"1.2.5","depth":2,"anchor":"#问题","path":"前端部署文档.md","ref":"前端部署文档.md#问题","articles":[]}]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","insert-logo-link"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"insert-logo-link":{"src":"./images/logo.png","url":"https://github.com/analysys/EasyScheduler"},"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"YIGUAN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"调度系统-EasyScheduler","language":"zh-hans","gitbook":"3.2.3","description":"调度系统"},"file":{"path":"前端部署文档.md","mtime":"2019-03-25T15:34:59.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-29T06:58:45.353Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"环境搭建","level":"1.2.1","depth":2,"next":{"title":"安装及配置","level":"1.2.2","depth":2,"anchor":"#安装及配置","path":"前端部署文档.md","ref":"前端部署文档.md#安装及配置","articles":[]},"previous":{"title":"前端部署文档","level":"1.2","depth":1,"ref":"","articles":[{"title":"环境搭建","level":"1.2.1","depth":2,"anchor":"#前端项目环境构建及编译","path":"前端部署文档.md","ref":"前端部署文档.md#前端项目环境构建及编译","articles":[]},{"title":"安装及配置","level":"1.2.2","depth":2,"anchor":"#安装及配置","path":"前端部署文档.md","ref":"前端部署文档.md#安装及配置","articles":[]},{"title":"项目生产环境Nginx配置","level":"1.2.3","depth":2,"anchor":"#项目生产环境配置","path":"前端部署文档.md","ref":"前端部署文档.md#项目生产环境配置","articles":[]},{"title":"前端项目发布","level":"1.2.4","depth":2,"anchor":"#前端项目发布","path":"前端部署文档.md","ref":"前端部署文档.md#前端项目发布","articles":[]},{"title":"问题","level":"1.2.5","depth":2,"anchor":"#问题","path":"前端部署文档.md","ref":"前端部署文档.md#问题","articles":[]}]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","insert-logo-link","livereload"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"livereload":{},"insert-logo-link":{"src":"./images/logo.png","url":"https://github.com/analysys/EasyScheduler"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"YIGUAN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"调度系统-EasyScheduler","language":"zh-hans","gitbook":"3.2.3","description":"调度系统"},"file":{"path":"前端部署文档.md","mtime":"2019-03-29T07:13:48.051Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-29T08:12:14.686Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -674,6 +671,10 @@ client_max_body_size 1024m
     
         
         <script src="gitbook/gitbook-plugin-insert-logo-link/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         
