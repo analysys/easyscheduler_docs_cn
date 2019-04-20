@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>自定义任务插件文档 · 调度系统-EasyScheduler</title>
+        <title>开发环境搭建 · 调度系统-EasyScheduler</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,8 +57,8 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="任务插件开发.html" />
     
-    <link rel="prev" href="后端开发文档.html" />
     
 
     </head>
@@ -414,7 +414,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >自定义任务插件文档</a>
+        <a href="." >开发环境搭建</a>
     </h1>
 </div>
 
@@ -429,54 +429,34 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="&#x4EFB;&#x52A1;&#x63D2;&#x4EF6;&#x5F00;&#x53D1;">&#x4EFB;&#x52A1;&#x63D2;&#x4EF6;&#x5F00;&#x53D1;</h2>
-<p>&#x63D0;&#x9192;:&#x76EE;&#x524D;&#x4EFB;&#x52A1;&#x63D2;&#x4EF6;&#x5F00;&#x53D1;&#x6682;&#x4E0D;&#x652F;&#x6301;&#x70ED;&#x90E8;&#x7F72;</p>
-<h3 id="&#x57FA;&#x4E8E;shell&#x7684;&#x4EFB;&#x52A1;">&#x57FA;&#x4E8E;SHELL&#x7684;&#x4EFB;&#x52A1;</h3>
-<h4 id="&#x57FA;&#x4E8E;yarn&#x7684;&#x8BA1;&#x7B97;&#xFF08;&#x53C2;&#x89C1;mapreducetask&#xFF09;">&#x57FA;&#x4E8E;YARN&#x7684;&#x8BA1;&#x7B97;&#xFF08;&#x53C2;&#x89C1;MapReduceTask&#xFF09;</h4>
+                                <h1 id="&#x540E;&#x7AEF;&#x5F00;&#x53D1;&#x6587;&#x6863;">&#x540E;&#x7AEF;&#x5F00;&#x53D1;&#x6587;&#x6863;</h1>
+<p>&#x56E0;EasyScheduler&#x4E2D;escheduler-rpc&#x6A21;&#x5757;&#x4F7F;&#x7528;&#x5230;Grpc&#xFF0C;&#x9700;&#x8981;&#x7528;&#x5230;Maven&#x7F16;&#x8BD1;&#x751F;&#x6210;&#x6240;&#x9700;&#x8981;&#x7684;&#x7C7B;</p>
+<h2 id="&#x9879;&#x76EE;&#x7F16;&#x8BD1;">&#x9879;&#x76EE;&#x7F16;&#x8BD1;</h2>
+<p>&#x5C06;EasyScheduler&#x6E90;&#x7801;&#x4E0B;&#x8F7D;&#x5BFC;&#x5165;Idea&#x7B49;&#x5F00;&#x53D1;&#x5DE5;&#x5177;&#x540E;&#xFF0C;&#x9996;&#x5148;&#x8F6C;&#x4E3A;Maven&#x9879;&#x76EE;(&#x53F3;&#x952E;&#x70B9;&#x51FB;&#x540E;&#x9009;&#x62E9;&quot;Add Framework Support&quot;)</p>
 <ul>
-<li>&#x9700;&#x8981;&#x5728; <strong>cn.escheduler.server.worker.task</strong> &#x4E0B;&#x7684; <strong>TaskManager</strong> &#x7C7B;&#x4E2D;&#x521B;&#x5EFA;&#x81EA;&#x5B9A;&#x4E49;&#x4EFB;&#x52A1;(&#x4E5F;&#x9700;&#x5728;TaskType&#x6CE8;&#x518C;&#x5BF9;&#x5E94;&#x7684;&#x4EFB;&#x52A1;&#x7C7B;&#x578B;)</li>
-<li>&#x9700;&#x8981;&#x7EE7;&#x627F;<strong>cn.escheduler.server.worker.task</strong> &#x4E0B;&#x7684; <strong>AbstractYarnTask</strong></li>
-<li>&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x8C03;&#x5EA6; <strong>AbstractYarnTask</strong> &#x6784;&#x9020;&#x65B9;&#x6CD5;</li>
-<li>&#x7EE7;&#x627F; <strong>AbstractParameters</strong> &#x81EA;&#x5B9A;&#x4E49;&#x4EFB;&#x52A1;&#x53C2;&#x6570;&#x5B9E;&#x4F53;</li>
-<li>&#x91CD;&#x5199; <strong>AbstractTask</strong> &#x7684; <strong>init</strong> &#x65B9;&#x6CD5;&#x4E2D;&#x89E3;&#x6790;<strong>&#x81EA;&#x5B9A;&#x4E49;&#x4EFB;&#x52A1;&#x53C2;&#x6570;</strong></li>
-<li>&#x91CD;&#x5199; <strong>buildCommand</strong> &#x5C01;&#x88C5;command</li>
+<li>&#x6267;&#x884C;&#x7F16;&#x8BD1;&#x547D;&#x4EE4;&#xFF1A;</li>
 </ul>
-<h4 id="&#x57FA;&#x4E8E;&#x975E;yarn&#x7684;&#x8BA1;&#x7B97;&#xFF08;&#x53C2;&#x89C1;shelltask&#xFF09;">&#x57FA;&#x4E8E;&#x975E;YARN&#x7684;&#x8BA1;&#x7B97;&#xFF08;&#x53C2;&#x89C1;ShellTask&#xFF09;</h4>
-<ul>
-<li><p>&#x9700;&#x8981;&#x5728; <strong>cn.escheduler.server.worker.task</strong> &#x4E0B;&#x7684; <strong>TaskManager</strong> &#x4E2D;&#x521B;&#x5EFA;&#x81EA;&#x5B9A;&#x4E49;&#x4EFB;&#x52A1;</p>
-</li>
-<li><p>&#x9700;&#x8981;&#x7EE7;&#x627F;<strong>cn.escheduler.server.worker.task</strong> &#x4E0B;&#x7684; <strong>AbstractTask</strong></p>
-</li>
-<li><p>&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x4E2D;&#x5B9E;&#x4F8B;&#x5316; <strong>ShellCommandExecutor</strong></p>
-<pre><code>public ShellTask(TaskProps props, Logger logger) {
-  super(props, logger);
-
-  this.taskDir = props.getTaskDir();
-
-  this.processTask = new ShellCommandExecutor(this::logHandle,
-      props.getTaskDir(), props.getTaskAppId(),
-      props.getTenantCode(), props.getEnvFile(), props.getTaskStartTime(),
-      props.getTaskTimeout(), logger);
-  this.processDao = DaoFactory.getDaoInstance(ProcessDao.class);
-}
-</code></pre><p>&#x4F20;&#x5165;&#x81EA;&#x5B9A;&#x4E49;&#x4EFB;&#x52A1;&#x7684; <strong>TaskProps</strong>&#x548C;&#x81EA;&#x5B9A;&#x4E49;<strong>Logger</strong>&#xFF0C;TaskProps &#x5C01;&#x88C5;&#x4E86;&#x4EFB;&#x52A1;&#x7684;&#x4FE1;&#x606F;&#xFF0C;Logger&#x5206;&#x88C5;&#x4E86;&#x81EA;&#x5B9A;&#x4E49;&#x65E5;&#x5FD7;&#x4FE1;&#x606F;</p>
-</li>
-<li><p>&#x7EE7;&#x627F; <strong>AbstractParameters</strong> &#x81EA;&#x5B9A;&#x4E49;&#x4EFB;&#x52A1;&#x53C2;&#x6570;&#x5B9E;&#x4F53;</p>
-</li>
-<li><p>&#x91CD;&#x5199; <strong>AbstractTask</strong> &#x7684; <strong>init</strong> &#x65B9;&#x6CD5;&#x4E2D;&#x89E3;&#x6790;<strong>&#x81EA;&#x5B9A;&#x4E49;&#x4EFB;&#x52A1;&#x53C2;&#x6570;&#x5B9E;&#x4F53;</strong></p>
-</li>
-<li><p>&#x91CD;&#x5199; <strong>handle</strong> &#x65B9;&#x6CD5;&#xFF0C;&#x8C03;&#x7528; <strong>ShellCommandExecutor</strong> &#x7684; <strong>run</strong> &#x65B9;&#x6CD5;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x4F20;&#x5165;&#x81EA;&#x5DF1;&#x7684;<strong>command</strong>&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x4F20;&#x5165; ProcessDao&#xFF0C;&#x8BBE;&#x7F6E;&#x76F8;&#x5E94;&#x7684; <strong>exitStatusCode</strong></p>
-</li>
+<pre><code> mvn -U clean package assembly:assembly -Dmaven.test.skip=true
+</code></pre><ul>
+<li>&#x67E5;&#x770B;&#x76EE;&#x5F55;</li>
 </ul>
-<h3 id="&#x57FA;&#x4E8E;&#x975E;shell&#x7684;&#x4EFB;&#x52A1;&#xFF08;&#x53C2;&#x89C1;sqltask&#xFF09;">&#x57FA;&#x4E8E;&#x975E;SHELL&#x7684;&#x4EFB;&#x52A1;&#xFF08;&#x53C2;&#x89C1;SqlTask&#xFF09;</h3>
-<ul>
-<li>&#x9700;&#x8981;&#x5728; <strong>cn.escheduler.server.worker.task</strong> &#x4E0B;&#x7684; <strong>TaskManager</strong> &#x4E2D;&#x521B;&#x5EFA;&#x81EA;&#x5B9A;&#x4E49;&#x4EFB;&#x52A1;</li>
-<li>&#x9700;&#x8981;&#x7EE7;&#x627F;<strong>cn.escheduler.server.worker.task</strong> &#x4E0B;&#x7684; <strong>AbstractTask</strong></li>
-<li>&#x7EE7;&#x627F; <strong>AbstractParameters</strong> &#x81EA;&#x5B9A;&#x4E49;&#x4EFB;&#x52A1;&#x53C2;&#x6570;&#x5B9E;&#x4F53;</li>
-<li>&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x6216;&#x8005;&#x91CD;&#x5199; <strong>AbstractTask</strong> &#x7684; <strong>init</strong> &#x65B9;&#x6CD5;&#x4E2D;&#xFF0C;&#x89E3;&#x6790;&#x81EA;&#x5B9A;&#x4E49;&#x4EFB;&#x52A1;&#x53C2;&#x6570;&#x5B9E;&#x4F53;</li>
-<li>&#x91CD;&#x5199; <strong>handle</strong> &#x65B9;&#x6CD5;&#x5B9E;&#x73B0;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x5E76;&#x8BBE;&#x7F6E;&#x76F8;&#x5E94;&#x7684;<strong>exitStatusCode</strong></li>
+<p>&#x6B63;&#x5E38;&#x7F16;&#x8BD1;&#x5B8C;&#x540E;&#xFF0C;&#x4F1A;&#x5728;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x751F;&#x6210; target/escheduler-{version}/</p>
+<pre><code>    bin
+    conf
+    lib
+    script
+    sql
+    install.sh
+</code></pre><ul>
+<li>&#x8BF4;&#x660E;</li>
 </ul>
-
+<pre><code>bin : &#x57FA;&#x7840;&#x670D;&#x52A1;&#x542F;&#x52A8;&#x811A;&#x672C;
+conf : &#x9879;&#x76EE;&#x914D;&#x7F6E;&#x6587;&#x4EF6;
+lib : &#x9879;&#x76EE;&#x4F9D;&#x8D56;jar&#x5305;&#xFF0C;&#x5305;&#x62EC;&#x5404;&#x4E2A;&#x6A21;&#x5757;jar&#x548C;&#x7B2C;&#x4E09;&#x65B9;jar
+script : &#x96C6;&#x7FA4;&#x542F;&#x52A8;&#x3001;&#x505C;&#x6B62;&#x548C;&#x670D;&#x52A1;&#x76D1;&#x63A7;&#x542F;&#x505C;&#x811A;&#x672C;
+sql : &#x9879;&#x76EE;&#x4F9D;&#x8D56;sql&#x6587;&#x4EF6;
+install.sh : &#x4E00;&#x952E;&#x90E8;&#x7F72;&#x811A;&#x672C;
+</code></pre>
                                 
                                 </section>
                             
@@ -503,10 +483,10 @@
 
             
                 
-                <a href="后端开发文档.html#项目编译" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 开发环境搭建">
-                    <i class="fa fa-angle-left"></i>
-                </a>
                 
+                <a href="任务插件开发.html#任务插件开发" class="navigation navigation-next navigation-unique" aria-label="Next page: 自定义任务插件文档">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -515,7 +495,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"自定义任务插件文档","level":"1.7.2","depth":2,"previous":{"title":"开发环境搭建","level":"1.7.1","depth":2,"anchor":"#项目编译","path":"后端开发文档.md","ref":"后端开发文档.md#项目编译","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","insert-logo-link"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"insert-logo-link":{"src":"http://geek.analysys.cn/static/upload/236/2019-03-29/379450b4-7919-4707-877c-4d33300377d4.png","url":"https://github.com/analysys/EasyScheduler"},"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"YIGUAN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"调度系统-EasyScheduler","language":"zh-hans","gitbook":"3.2.3","description":"调度系统"},"file":{"path":"任务插件开发.md","mtime":"2019-04-01T04:03:14.727Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-20T06:32:45.734Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"开发环境搭建","level":"1.7.1","depth":2,"next":{"title":"自定义任务插件文档","level":"1.7.2","depth":2,"anchor":"#任务插件开发","path":"任务插件开发.md","ref":"任务插件开发.md#任务插件开发","articles":[]},"previous":{"title":"后端开发文档","level":"1.7","depth":1,"ref":"","articles":[{"title":"开发环境搭建","level":"1.7.1","depth":2,"anchor":"#项目编译","path":"后端开发文档.md","ref":"后端开发文档.md#项目编译","articles":[]},{"title":"自定义任务插件文档","level":"1.7.2","depth":2,"anchor":"#任务插件开发","path":"任务插件开发.md","ref":"任务插件开发.md#任务插件开发","articles":[]}]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","insert-logo-link"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"insert-logo-link":{"src":"http://geek.analysys.cn/static/upload/236/2019-03-29/379450b4-7919-4707-877c-4d33300377d4.png","url":"https://github.com/analysys/EasyScheduler"},"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"YIGUAN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"调度系统-EasyScheduler","language":"zh-hans","gitbook":"3.2.3","description":"调度系统"},"file":{"path":"后端开发文档.md","mtime":"2019-04-20T06:28:08.740Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-20T06:32:45.734Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
