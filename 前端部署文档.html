@@ -389,6 +389,38 @@
                 <span>
             
                     
+                    系统版本升级文档
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="升级文档.html">
+            
+                <a href="升级文档.html">
+            
+                    
+                    版本升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
                     历次版本发布内容
             
                 </span>
@@ -398,7 +430,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.8.1" data-path="1.0.2-release.html">
+        <li class="chapter " data-level="1.9.1" data-path="1.0.2-release.html">
             
                 <a href="1.0.2-release.html">
             
@@ -411,7 +443,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.2" data-path="1.0.1-release.html">
+        <li class="chapter " data-level="1.9.2" data-path="1.0.1-release.html">
             
                 <a href="1.0.1-release.html">
             
@@ -424,7 +456,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.3" >
+        <li class="chapter " data-level="1.9.3" >
             
                 <span>
             
@@ -492,22 +524,21 @@
 <h2 id="1&#x3001;&#x51C6;&#x5907;&#x5DE5;&#x4F5C;">1&#x3001;&#x51C6;&#x5907;&#x5DE5;&#x4F5C;</h2>
 <h4 id="&#x4E0B;&#x8F7D;&#x5B89;&#x88C5;&#x5305;">&#x4E0B;&#x8F7D;&#x5B89;&#x88C5;&#x5305;</h4>
 <p>&#x76EE;&#x524D;&#x6700;&#x65B0;&#x5B89;&#x88C5;&#x5305;&#x7248;&#x672C;&#x662F;1.0.2&#xFF0C;&#x4E0B;&#x8F7D;&#x5730;&#x5740;&#xFF1A; <a href="https://gitee.com/easyscheduler/EasyScheduler/attach_files/" target="_blank">&#x7801;&#x4E91;&#x4E0B;&#x8F7D;</a></p>
-<p>&#x4E0B;&#x8F7D;escheduler-ui-1.0.2.tar.gz&#x540E;&#xFF0C;&#x89E3;&#x538B;&#x540E;&#x4F1A;&#x4EA7;&#x751F;dist&#x76EE;&#x5F55;,&#x8FDB;&#x5165;dist&#x76EE;&#x5F55;</p>
-<blockquote>
-<p>cd dist  </p>
-</blockquote>
+<p>&#x4E0B;&#x8F7D; escheduler-ui-1.0.2.tar.gz &#x540E;&#xFF0C;&#x89E3;&#x538B;<code>tar -zxvf escheduler-ui-1.0.2.tar.gz ./</code>&#x540E;&#xFF0C;&#x8FDB;&#x5165;<code>escheduler-ui</code>&#x76EE;&#x5F55;</p>
 <h2 id="2&#x3001;&#x90E8;&#x7F72;">2&#x3001;&#x90E8;&#x7F72;</h2>
 <p>&#x4EE5;&#x4E0B;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x4EFB;&#x9009;&#x5176;&#x4E00;&#x90E8;&#x7F72;&#x5373;&#x53EF;&#xFF0C;&#x63A8;&#x8350;&#x81EA;&#x52A8;&#x5316;&#x90E8;&#x7F72;</p>
 <h3 id="21-&#x81EA;&#x52A8;&#x5316;&#x90E8;&#x7F72;">2.1 &#x81EA;&#x52A8;&#x5316;&#x90E8;&#x7F72;</h3>
-<p>&#x5728;&#x524D;&#x7AEF;&#x9879;&#x76EE;&#x6839;&#x76EE;&#x5F55;dist&#x4E0B;&#x7F16;&#x8F91;&#x5B89;&#x88C5;&#x6587;&#x4EF6;<code>vi install(&#x7EBF;&#x4E0A;&#x73AF;&#x5883;).sh</code>(&#x6267;&#x884C;&#x65F6;&#xFF0C;&#x6700;&#x597D;&#x4FEE;&#x6539;install(&#x7EBF;&#x4E0A;&#x73AF;&#x5883;).sh&#x4E3A;install-ui.sh,&#x8DDF;&#x540E;&#x7AEF;&#x90E8;&#x7F72;&#x533A;&#x5206;)</p>
+<p>&#x5728;<code>escheduler-ui</code>&#x76EE;&#x5F55;&#x4E0B;&#x7F16;&#x8F91;&#x5B89;&#x88C5;&#x6587;&#x4EF6;<code>vi install-escheduler-ui.sh</code></p>
 <p>&#x66F4;&#x6539;&#x524D;&#x7AEF;&#x8BBF;&#x95EE;&#x7AEF;&#x53E3;&#x548C;&#x540E;&#x7AEF;&#x4EE3;&#x7406;&#x63A5;&#x53E3;&#x5730;&#x5740;</p>
 <pre><code># &#x914D;&#x7F6E;&#x524D;&#x7AEF;&#x8BBF;&#x95EE;&#x7AEF;&#x53E3;
 esc_proxy=&quot;8888&quot;
 
 # &#x914D;&#x7F6E;&#x4EE3;&#x7406;&#x540E;&#x7AEF;&#x63A5;&#x53E3;
 esc_proxy_port=&quot;http://192.168.xx.xx:12345&quot;
-</code></pre><p>&#x524D;&#x7AEF;&#x81EA;&#x52A8;&#x90E8;&#x7F72;&#x57FA;&#x4E8E;linux&#x7CFB;&#x7EDF;<code>yum</code>&#x64CD;&#x4F5C;&#xFF0C;&#x90E8;&#x7F72;&#x4E4B;&#x524D;&#x8BF7;&#x5148;&#x5B89;&#x88C5;&#x66F4;&#x65B0;<code>yum</code></p>
-<p>&#x5728;&#x524D;&#x7AEF;&#x9879;&#x76EE;&#x6839;&#x76EE;&#x5F55;dist&#x4E0B;&#x6267;&#x884C;<code>./install(&#x7EBF;&#x4E0A;&#x73AF;&#x5883;).sh</code> &#x6216;&#x8005;&#x6539;&#x540D;&#x540E;&#x7684; <code>./install-ui.sh</code></p>
+</code></pre><blockquote>
+<p>&#x524D;&#x7AEF;&#x81EA;&#x52A8;&#x90E8;&#x7F72;&#x57FA;&#x4E8E;linux&#x7CFB;&#x7EDF;<code>yum</code>&#x64CD;&#x4F5C;&#xFF0C;&#x90E8;&#x7F72;&#x4E4B;&#x524D;&#x8BF7;&#x5148;&#x5B89;&#x88C5;&#x66F4;&#x65B0;<code>yum</code></p>
+</blockquote>
+<p>&#x5728;&#x8BE5;&#x76EE;&#x5F55;&#x4E0B;&#x6267;&#x884C;<code>./install-escheduler-ui.sh</code></p>
 <h3 id="22-&#x624B;&#x52A8;&#x90E8;&#x7F72;">2.2 &#x624B;&#x52A8;&#x90E8;&#x7F72;</h3>
 <p>&#x5B89;&#x88C5;epel&#x6E90; <code>yum install epel-release -y</code></p>
 <p>&#x5B89;&#x88C5;Nginx <code>yum install nginx -y</code></p>
@@ -602,7 +633,7 @@ client_max_body_size 1024m
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"准备工作","level":"1.2.1","depth":2,"next":{"title":"部署","level":"1.2.2","depth":2,"anchor":"#2、部署","path":"前端部署文档.md","ref":"前端部署文档.md#2、部署","articles":[]},"previous":{"title":"前端部署文档","level":"1.2","depth":1,"ref":"","articles":[{"title":"准备工作","level":"1.2.1","depth":2,"anchor":"#1、准备工作","path":"前端部署文档.md","ref":"前端部署文档.md#1、准备工作","articles":[]},{"title":"部署","level":"1.2.2","depth":2,"anchor":"#2、部署","path":"前端部署文档.md","ref":"前端部署文档.md#2、部署","articles":[]},{"title":"常见问题","level":"1.2.3","depth":2,"anchor":"#前端常见问题","path":"前端部署文档.md","ref":"前端部署文档.md#前端常见问题","articles":[]}]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","insert-logo-link"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"insert-logo-link":{"src":"http://geek.analysys.cn/static/upload/236/2019-03-29/379450b4-7919-4707-877c-4d33300377d4.png","url":"https://github.com/analysys/EasyScheduler"},"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"YIGUAN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"调度系统-EasyScheduler","language":"zh-hans","gitbook":"3.2.3","description":"调度系统"},"file":{"path":"前端部署文档.md","mtime":"2019-04-26T12:37:24.815Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-26T12:39:44.710Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"准备工作","level":"1.2.1","depth":2,"next":{"title":"部署","level":"1.2.2","depth":2,"anchor":"#2、部署","path":"前端部署文档.md","ref":"前端部署文档.md#2、部署","articles":[]},"previous":{"title":"前端部署文档","level":"1.2","depth":1,"ref":"","articles":[{"title":"准备工作","level":"1.2.1","depth":2,"anchor":"#1、准备工作","path":"前端部署文档.md","ref":"前端部署文档.md#1、准备工作","articles":[]},{"title":"部署","level":"1.2.2","depth":2,"anchor":"#2、部署","path":"前端部署文档.md","ref":"前端部署文档.md#2、部署","articles":[]},{"title":"常见问题","level":"1.2.3","depth":2,"anchor":"#前端常见问题","path":"前端部署文档.md","ref":"前端部署文档.md#前端常见问题","articles":[]}]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","insert-logo-link","livereload"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"livereload":{},"insert-logo-link":{"src":"http://geek.analysys.cn/static/upload/236/2019-03-29/379450b4-7919-4707-877c-4d33300377d4.png","url":"https://github.com/analysys/EasyScheduler"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"YIGUAN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"调度系统-EasyScheduler","language":"zh-hans","gitbook":"3.2.3","description":"调度系统"},"file":{"path":"前端部署文档.md","mtime":"2019-04-28T10:57:51.063Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-28T11:01:58.039Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -617,6 +648,10 @@ client_max_body_size 1024m
     
         
         <script src="gitbook/gitbook-plugin-insert-logo-link/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         
