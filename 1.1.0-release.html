@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>版本升级 · 调度系统-EasyScheduler</title>
+        <title>1.1.0 release · 调度系统-EasyScheduler</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -56,6 +56,8 @@
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
+    
+    <link rel="next" href="1.0.3-release.html" />
     
     
 
@@ -538,7 +540,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.11.1" data-path="升级文档.html">
+        <li class="chapter " data-level="1.11.1" data-path="升级文档.html">
             
                 <a href="升级文档.html">
             
@@ -570,7 +572,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.12.1" data-path="1.1.0-release.html">
+        <li class="chapter active" data-level="1.12.1" data-path="1.1.0-release.html">
             
                 <a href="1.1.0-release.html">
             
@@ -670,7 +672,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >版本升级</a>
+        <a href="." >1.1.0 release</a>
     </h1>
 </div>
 
@@ -685,39 +687,51 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="easyscheduler&#x5347;&#x7EA7;&#x6587;&#x6863;">EasyScheduler&#x5347;&#x7EA7;&#x6587;&#x6863;</h1>
-<h2 id="1-&#x5907;&#x4EFD;&#x4E0A;&#x4E00;&#x7248;&#x672C;&#x6587;&#x4EF6;&#x548C;&#x6570;&#x636E;&#x5E93;">1. &#x5907;&#x4EFD;&#x4E0A;&#x4E00;&#x7248;&#x672C;&#x6587;&#x4EF6;&#x548C;&#x6570;&#x636E;&#x5E93;</h2>
-<h2 id="2-&#x505C;&#x6B62;escheduler&#x6240;&#x6709;&#x670D;&#x52A1;">2. &#x505C;&#x6B62;escheduler&#x6240;&#x6709;&#x670D;&#x52A1;</h2>
-<p> <code>sh ./script/stop_all.sh</code></p>
-<h2 id="3-&#x4E0B;&#x8F7D;&#x65B0;&#x7248;&#x672C;&#x7684;&#x5B89;&#x88C5;&#x5305;">3. &#x4E0B;&#x8F7D;&#x65B0;&#x7248;&#x672C;&#x7684;&#x5B89;&#x88C5;&#x5305;</h2>
+                                <h1 id="easy-scheduler-release-110">Easy Scheduler Release 1.1.0</h1>
+<p>Easy Scheduler 1.1.0&#x662F;1.x&#x7CFB;&#x5217;&#x4E2D;&#x7684;&#x7B2C;&#x4E94;&#x4E2A;&#x7248;&#x672C;&#x3002;</p>
+<h1 id="&#x65B0;&#x7279;&#x6027;&#xFF1A;">&#x65B0;&#x7279;&#x6027;&#xFF1A;</h1>
 <ul>
-<li><a href="https://gitee.com/easyscheduler/EasyScheduler/attach_files" target="_blank">&#x7801;&#x4E91;&#x4E0B;&#x8F7D;</a>, &#x4E0B;&#x8F7D;&#x6700;&#x65B0;&#x7248;&#x672C;&#x7684;&#x524D;&#x540E;&#x7AEF;&#x5B89;&#x88C5;&#x5305;(&#x540E;&#x7AEF;&#x7B80;&#x79F0;escheduler-backend&#x3001;&#x524D;&#x7AEF;&#x7B80;&#x79F0;escheduler-ui)</li>
-<li>&#x4EE5;&#x4E0B;&#x5347;&#x7EA7;&#x64CD;&#x4F5C;&#x90FD;&#x9700;&#x8981;&#x5728;&#x65B0;&#x7248;&#x672C;&#x7684;&#x76EE;&#x5F55;&#x8FDB;&#x884C;</li>
+<li>[<a href="https://github.com/analysys/EasyScheduler/issues/391" target="_blank">EasyScheduler-391</a>] run a process under a specified tenement user</li>
+<li>[<a href="https://github.com/analysys/EasyScheduler/issues/288" target="_blank">EasyScheduler-288</a>] Feature/qiye_weixin</li>
+<li>[<a href="https://github.com/analysys/EasyScheduler/issues/189" target="_blank">EasyScheduler-189</a>] Kerberos&#x7B49;&#x5B89;&#x5168;&#x652F;&#x6301;</li>
+<li>[<a href="https://github.com/analysys/EasyScheduler/issues/398" target="_blank">EasyScheduler-398</a>]&#x7BA1;&#x7406;&#x5458;&#xFF0C;&#x6709;&#x79DF;&#x6237;&#xFF08;install.sh&#x8BBE;&#x7F6E;&#x9ED8;&#x8BA4;&#x79DF;&#x6237;&#xFF09;&#xFF0C;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x8D44;&#x6E90;&#x3001;&#x9879;&#x76EE;&#x548C;&#x6570;&#x636E;&#x6E90;&#xFF08;&#x9650;&#x5236;&#x6709;&#x4E00;&#x4E2A;&#x7BA1;&#x7406;&#x5458;&#xFF09;</li>
+<li>[<a href="https://github.com/analysys/EasyScheduler/issues/293" target="_blank">EasyScheduler-293</a>]&#x70B9;&#x51FB;&#x8FD0;&#x884C;&#x6D41;&#x7A0B;&#x65F6;&#x5019;&#x9009;&#x62E9;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x6CA1;&#x6709;&#x5730;&#x65B9;&#x53EF;&#x67E5;&#x770B;&#xFF0C;&#x4E5F;&#x6CA1;&#x6709;&#x4FDD;&#x5B58;</li>
+<li>[<a href="https://github.com/analysys/EasyScheduler/issues/401" target="_blank">EasyScheduler-401</a>]&#x5B9A;&#x65F6;&#x5F88;&#x5BB9;&#x6613;&#x5B9A;&#x65F6;&#x6BCF;&#x79D2;&#x4E00;&#x6B21;&#xFF0C;&#x5B9A;&#x65F6;&#x5B8C;&#x6210;&#x4EE5;&#x540E;&#x53EF;&#x4EE5;&#x5728;&#x9875;&#x9762;&#x663E;&#x793A;&#x4E00;&#x4E0B;&#x4E0B;&#x6B21;&#x89E6;&#x53D1;&#x65F6;&#x95F4;</li>
+<li>[<a href="https://github.com/analysys/EasyScheduler/pull/493" target="_blank">EasyScheduler-493</a>]add datasource kerberos auth and FAQ modify and add resource upload s3</li>
 </ul>
-<h2 id="4-&#x6570;&#x636E;&#x5E93;&#x5347;&#x7EA7;">4. &#x6570;&#x636E;&#x5E93;&#x5347;&#x7EA7;</h2>
+<h1 id="&#x589E;&#x5F3A;&#xFF1A;">&#x589E;&#x5F3A;&#xFF1A;</h1>
 <ul>
-<li>&#x4FEE;&#x6539;conf/dao/data_source.properties&#x4E2D;&#x7684;&#x4E0B;&#x5217;&#x5C5E;&#x6027;</li>
+<li>[<a href="https://github.com/analysys/EasyScheduler/issues/227" target="_blank">EasyScheduler-227</a>] upgrade spring-boot to 2.1.x and spring to 5.x</li>
+<li>[<a href="https://github.com/analysys/EasyScheduler/issues/434" target="_blank">EasyScheduler-434</a>] worker&#x8282;&#x70B9;&#x6570;&#x91CF; zk&#x548C;mysql&#x4E2D;&#x4E0D;&#x4E00;&#x81F4;</li>
+<li>[<a href="https://github.com/analysys/EasyScheduler/issues/435" target="_blank">EasyScheduler-435</a>]&#x90AE;&#x7BB1;&#x683C;&#x5F0F;&#x7684;&#x9A8C;&#x8BC1;</li>
+<li>[<a href="https://github.com/analysys/EasyScheduler/issues/441" target="_blank">EasyScheduler-441</a>] &#x7981;&#x6B62;&#x8FD0;&#x884C;&#x8282;&#x70B9;&#x52A0;&#x5165;&#x5DF2;&#x5B8C;&#x6210;&#x8282;&#x70B9;&#x68C0;&#x6D4B;</li>
+<li>[<a href="https://github.com/analysys/EasyScheduler/issues/400" target="_blank">EasyScheduler-400</a>] &#x9996;&#x9875;&#x9875;&#x9762;&#xFF0C;&#x961F;&#x5217;&#x7EDF;&#x8BA1;&#x4E0D;&#x548C;&#x8C10;&#xFF0C;&#x547D;&#x4EE4;&#x7EDF;&#x8BA1;&#x65E0;&#x6570;&#x636E;</li>
+<li>[<a href="https://github.com/analysys/EasyScheduler/issues/395" target="_blank">EasyScheduler-395</a>] &#x5BF9;&#x4E8E;&#x5BB9;&#x9519;&#x6062;&#x590D;&#x7684;&#x6D41;&#x7A0B;&#xFF0C;&#x72B6;&#x6001;&#x4E0D;&#x80FD;&#x4E3A; **&#x6B63;&#x5728;&#x8FD0;&#x884C;</li>
+<li>[<a href="https://github.com/analysys/EasyScheduler/issues/529" target="_blank">EasyScheduler-529</a>] optimize poll task from zookeeper</li>
+<li>[<a href="https://github.com/analysys/EasyScheduler/issues/242" target="_blank">EasyScheduler-242</a>]worker-server&#x8282;&#x70B9;&#x83B7;&#x53D6;&#x4EFB;&#x52A1;&#x6027;&#x80FD;&#x95EE;&#x9898;</li>
+<li>[<a href="https://github.com/analysys/EasyScheduler/issues/352" target="_blank">EasyScheduler-352</a>]worker &#x5206;&#x7EC4;, &#x961F;&#x5217;&#x6D88;&#x8D39;&#x95EE;&#x9898;</li>
+<li>[<a href="https://github.com/analysys/EasyScheduler/issues/461" target="_blank">EasyScheduler-461</a>]&#x67E5;&#x770B;&#x6570;&#x636E;&#x6E90;&#x53C2;&#x6570;&#xFF0C;&#x9700;&#x8981;&#x52A0;&#x5BC6;&#x8D26;&#x53F7;&#x5BC6;&#x7801;&#x4FE1;&#x606F;</li>
+<li>[<a href="https://github.com/analysys/EasyScheduler/issues/396" target="_blank">EasyScheduler-396</a>]Dockerfile&#x4F18;&#x5316;&#xFF0C;&#x5E76;&#x5173;&#x8054;Dockerfile&#x548C;github&#x5B9E;&#x73B0;&#x81EA;&#x52A8;&#x6253;&#x955C;&#x50CF;</li>
+<li>[<a href="https://github.com/analysys/EasyScheduler/issues/389" target="_blank">EasyScheduler-389</a>]service monitor cannot find the change of master/worker</li>
+<li>[<a href="https://github.com/analysys/EasyScheduler/issues/511" target="_blank">EasyScheduler-511</a>]support recovery process from stop/kill nodes.</li>
+<li>[<a href="https://github.com/analysys/EasyScheduler/issues/399" target="_blank">EasyScheduler-399</a>]HadoopUtils&#x6307;&#x5B9A;&#x7528;&#x6237;&#x64CD;&#x4F5C;&#xFF0C;&#x800C;&#x4E0D;&#x662F; **&#x90E8;&#x7F72;&#x7528;&#x6237;</li>
 </ul>
-<pre><code>    spring.datasource.url
-    spring.datasource.username
-    spring.datasource.password
-</code></pre><ul>
-<li>&#x6267;&#x884C;&#x6570;&#x636E;&#x5E93;&#x5347;&#x7EA7;&#x811A;&#x672C;</li>
-</ul>
-<p><code>sh ./script/upgrade_escheduler.sh</code></p>
-<h2 id="5-&#x540E;&#x7AEF;&#x670D;&#x52A1;&#x5347;&#x7EA7;">5. &#x540E;&#x7AEF;&#x670D;&#x52A1;&#x5347;&#x7EA7;</h2>
+<h1 id="&#x4FEE;&#x590D;&#xFF1A;">&#x4FEE;&#x590D;&#xFF1A;</h1>
 <ul>
-<li><p>&#x4FEE;&#x6539;install.sh&#x914D;&#x7F6E;&#x5185;&#x5BB9;&#xFF0C;&#x6267;&#x884C;&#x5347;&#x7EA7;&#x811A;&#x672C;</p>
-<p><code>sh install.sh</code></p>
-</li>
+<li>[<a href="https://github.com/analysys/EasyScheduler/issues/394" target="_blank">EasyScheduler-394</a>] master&amp;worker&#x90E8;&#x7F72;&#x5728;&#x540C;&#x4E00;&#x53F0;&#x673A;&#x5668;&#x4E0A;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x91CD;&#x542F;master&amp;worker&#x670D;&#x52A1;&#xFF0C;&#x4F1A;&#x5BFC;&#x81F4;&#x4E4B;&#x524D;&#x8C03;&#x5EA6;&#x7684;&#x4EFB;&#x52A1;&#x65E0;&#x6CD5;&#x7EE7;&#x7EED;&#x8C03;&#x5EA6;</li>
+<li>[<a href="https://github.com/analysys/EasyScheduler/issues/469" target="_blank">EasyScheduler-469</a>]Fix naming errors,monitor page</li>
+<li>[<a href="https://github.com/analysys/EasyScheduler/issues/392" target="_blank">EasyScheduler-392</a>]Feature request: fix email regex check</li>
+<li>[<a href="https://github.com/analysys/EasyScheduler/issues/405" target="_blank">EasyScheduler-405</a>]&#x5B9A;&#x65F6;&#x4FEE;&#x6539;/&#x6DFB;&#x52A0;&#x9875;&#x9762;&#xFF0C;&#x5F00;&#x59CB;&#x65F6;&#x95F4;&#x548C;&#x7ED3;&#x675F;&#x65F6;&#x95F4;&#x4E0D;&#x80FD;&#x76F8;&#x540C;</li>
+<li>[<a href="https://github.com/analysys/EasyScheduler/issues/517" target="_blank">EasyScheduler-517</a>]&#x8865;&#x6570; - &#x5B50;&#x5DE5;&#x4F5C;&#x6D41; - &#x65F6;&#x95F4;&#x53C2;&#x6570; </li>
+<li>[<a href="https://github.com/analysys/EasyScheduler/issues/532" target="_blank">EasyScheduler-532</a>]python&#x8282;&#x70B9;&#x4E0D;&#x6267;&#x884C;&#x7684;&#x95EE;&#x9898; </li>
+<li>[<a href="https://github.com/analysys/EasyScheduler/issues/543" target="_blank">EasyScheduler-543</a>]optimize datasource connection params safety</li>
+<li>[<a href="https://github.com/analysys/EasyScheduler/issues/569" target="_blank">EasyScheduler-569</a>]&#x5B9A;&#x65F6;&#x4EFB;&#x52A1;&#x65E0;&#x6CD5;&#x771F;&#x6B63;&#x505C;&#x6B62;</li>
+<li>[<a href="https://github.com/analysys/EasyScheduler/issues/463" target="_blank">EasyScheduler-463</a>]&#x90AE;&#x7BB1;&#x9A8C;&#x8BC1;&#x4E0D;&#x652F;&#x6301;&#x975E;&#x5E38;&#x89C1;&#x540E;&#x7F00;&#x90AE;&#x7BB1;</li>
 </ul>
-<h2 id="6-&#x524D;&#x7AEF;&#x670D;&#x52A1;&#x5347;&#x7EA7;">6. &#x524D;&#x7AEF;&#x670D;&#x52A1;&#x5347;&#x7EA7;</h2>
-<ul>
-<li>&#x8986;&#x76D6;&#x4E0A;&#x4E00;&#x7248;&#x672C;dist&#x76EE;&#x5F55;</li>
-<li><p>&#x91CD;&#x542F;nginx&#x670D;&#x52A1;</p>
-<p>  <code>systemctl restart nginx</code></p>
-</li>
-</ul>
+<h1 id="&#x611F;&#x8C22;&#xFF1A;">&#x611F;&#x8C22;&#xFF1A;</h1>
+<p>&#x6700;&#x540E;&#x4F46;&#x6700;&#x91CD;&#x8981;&#x7684;&#x662F;&#xFF0C;&#x6CA1;&#x6709;&#x4EE5;&#x4E0B;&#x4F19;&#x4F34;&#x7684;&#x8D21;&#x732E;&#x5C31;&#x6CA1;&#x6709;&#x65B0;&#x7248;&#x672C;&#x7684;&#x8BDE;&#x751F;&#xFF1A;</p>
+<p>Baoqi, jimmy201602, samz406, petersear, millionfor, hyperknob, fanguanqun, yangqinlong, qq389401879, chgxtony, Stanfan, lfyee, thisnew, hujiang75277381, sunnyingit, lgbo-ustc, ivivi, lzy305, JackIllkid, telltime, lipengbo2018, wuchunfu, telltime</p>
+<p>&#x4EE5;&#x53CA;&#x5FAE;&#x4FE1;&#x7FA4;&#x91CC;&#x4F17;&#x591A;&#x7684;&#x70ED;&#x5FC3;&#x4F19;&#x4F34;&#xFF01;&#x5728;&#x6B64;&#x975E;&#x5E38;&#x611F;&#x8C22;&#xFF01;</p>
 
                                 
                                 </section>
@@ -746,6 +760,10 @@
             
                 
                 
+                <a href="1.0.3-release.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 1.0.3 release">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
             
         
     </div>
@@ -753,7 +771,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"版本升级","level":"1.11.1","depth":2,"next":{"title":"历次版本发布内容","level":"1.12","depth":1,"ref":"","articles":[{"title":"1.1.0 release","level":"1.12.1","depth":2,"path":"1.1.0-release.md","ref":"1.1.0-release.md","articles":[]},{"title":"1.0.3 release","level":"1.12.2","depth":2,"path":"1.0.3-release.md","ref":"1.0.3-release.md","articles":[]},{"title":"1.0.2 release","level":"1.12.3","depth":2,"path":"1.0.2-release.md","ref":"1.0.2-release.md","articles":[]},{"title":"1.0.1 release","level":"1.12.4","depth":2,"path":"1.0.1-release.md","ref":"1.0.1-release.md","articles":[]},{"title":"[1.0.0 release 正式开源]","level":"1.12.5","depth":2,"ref":"","articles":[]}]},"previous":{"title":"系统版本升级文档","level":"1.11","depth":1,"ref":"","articles":[{"title":"版本升级","level":"1.11.1","depth":2,"path":"升级文档.md","ref":"升级文档.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","insert-logo-link","livereload"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"livereload":{},"insert-logo-link":{"src":"http://geek.analysys.cn/static/upload/236/2019-03-29/379450b4-7919-4707-877c-4d33300377d4.png","url":"https://github.com/analysys/EasyScheduler"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"YIGUAN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"调度系统-EasyScheduler","language":"zh-hans","gitbook":"3.2.3","description":"调度系统"},"file":{"path":"升级文档.md","mtime":"2019-05-30T08:18:39.065Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-16T05:54:16.850Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"1.1.0 release","level":"1.12.1","depth":2,"next":{"title":"1.0.3 release","level":"1.12.2","depth":2,"path":"1.0.3-release.md","ref":"1.0.3-release.md","articles":[]},"previous":{"title":"历次版本发布内容","level":"1.12","depth":1,"ref":"","articles":[{"title":"1.1.0 release","level":"1.12.1","depth":2,"path":"1.1.0-release.md","ref":"1.1.0-release.md","articles":[]},{"title":"1.0.3 release","level":"1.12.2","depth":2,"path":"1.0.3-release.md","ref":"1.0.3-release.md","articles":[]},{"title":"1.0.2 release","level":"1.12.3","depth":2,"path":"1.0.2-release.md","ref":"1.0.2-release.md","articles":[]},{"title":"1.0.1 release","level":"1.12.4","depth":2,"path":"1.0.1-release.md","ref":"1.0.1-release.md","articles":[]},{"title":"[1.0.0 release 正式开源]","level":"1.12.5","depth":2,"ref":"","articles":[]}]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","insert-logo-link","livereload"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"livereload":{},"insert-logo-link":{"src":"http://geek.analysys.cn/static/upload/236/2019-03-29/379450b4-7919-4707-877c-4d33300377d4.png","url":"https://github.com/analysys/EasyScheduler"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"YIGUAN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"调度系统-EasyScheduler","language":"zh-hans","gitbook":"3.2.3","description":"调度系统"},"file":{"path":"1.1.0-release.md","mtime":"2019-07-16T03:03:58.870Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-16T05:54:16.850Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
