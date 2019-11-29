@@ -1,4 +1,4 @@
-## 请注意：本文档属于历史旧文档，将于1月后下线， 最新文档在：https://dolphinscheduler.apache.org
+## 请注意：本文档属于1.2.0以前历史文档，1.2.0目前正在发版过程中，1.2.0以后文档在：https://dolphinscheduler.apache.org
 
 Easy Scheduler
 ============
