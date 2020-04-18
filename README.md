@@ -47,7 +47,7 @@ Easy Scheduler
 
 - [**FAQ**](https://analysys.github.io/easyscheduler_docs_cn/EasyScheduler-FAQ.html?_blank "EasyScheduler-FAQ") 
 
-- <a href="http://52.82.13.76:8888" target="_blank">我要体验</a> 普通用户登录：demo/demo123
+- <a href="http://106.75.43.194:8888/" target="_blank">我要体验</a> 
 
 更多文档请参考 <a href="https://analysys.github.io/easyscheduler_docs_cn/" target="_blank">easyscheduler中文在线文档</a>
 
@@ -58,8 +58,9 @@ Easy Scheduler
 贡献者，于是我们决定把易调度贡献出来，并承诺长期维护。也希望对开源有同样热情和信念的伙伴加入进来，一起为开源献出一份力！
 
 ### 帮助
-The fastest way to get response from our developers is to submit issues,   or add our wechat : 510570367
+The fastest way to get response from our developers is to submit issues,   or add our wechat : dailidong66
  
+# 请注意：本文档属于1.2.0以前历史文档，1.2.0目前正在发版过程中，1.2.0以后文档在：https://dolphinscheduler.apache.org
 
 
 
