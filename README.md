@@ -1,6 +1,6 @@
-## 请注意：本文档属于1.2.0以前历史文档，1.2.0目前正在发版过程中，1.2.0以后文档在：https://dolphinscheduler.apache.org
+## 请注意：本文档属于1.2.0以前历史文档，1.2.0以后文档在：https://dolphinscheduler.apache.org
 
-Easy Scheduler
+DolphinScheduler(原Easy Scheduler)
 ============
 [![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
 
